@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: "/img/javasnake/javaEnd.png"
+image: "img/javasnake/java_logo1.png"
 title: "Java Snake Game"
 date: 2022
 published: true
