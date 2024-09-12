@@ -22,9 +22,11 @@ SeaPerch is an underwater ROV competition and community that guides over 250,000
 The competition consisted of a challenge course, an obstacle course, a techincal design report, and team video. The challenge course required our ROV to complete four different tasks including rotation and transportation of different objects across various platforms elevated above the pool floor.<br>
 A more in-depth overview of the pool competition courses can be found below.
 
-<pre>
+
+```
 The SeaPerch pool competition is divided up into the mission course and obstacle course. The first is the obstacle course which consists of five hoops that require the driver to precisely navigate the ROV through in order, starting with the hoop closest to the wall. Once the ROV has passed through the fifth and furthest hoop, it must surface the water before retracing its path, going back through the hoops in reverse order. The mission course consists of four separate tasks. The first of which, opening the battery panel, requires a latch to be rotated for the panel to be pushed or pulled open and must be completed first to gain access to the battery compartment. The second task involves disconnecting the power cables from the batteries in the battery compartment without applying force to the batteries. The third task is to replace the batteries in the battery compartment with the batteries in the adjacent battery pallet. The fourth task requires the ROV to transport tools from the Extra Vehicular Activity(EVA) tool tray to the tool caddy. All four of these tasks must be completed within 13 minutes. 
-</pre>
+```
+
 
 [1] Read more about SeaPerch [here](https://seaperch.org/about/)!
 
