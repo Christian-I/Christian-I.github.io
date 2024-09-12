@@ -28,9 +28,9 @@ This project was completed over two months and served to cement the content lear
 ``Object Orientation, GUI, Advanced I/O, Data Structures, and Relational Databases``<br>
 
 Here is an additional snippet of the goal of designing this project.
-```
-In my project, I will be making a simple snake game which will consist of a window in which the game is played, a snake consisting of square tiles, and a square tile that represents food. The game will be played with the arrow keys. This project will consist of classes with methods that are able to check for collisions, check if the snake has eaten the food that has spawned, spawn new food, and retrieve the location data of the snake as well as create the window in which the game is played. The user will be able to use the arrow keys to control the snake in the direction of the food and the game will halt if it detects a collision, or spawn more food if collision with food has been detected. 
-```
+<pre>
+In my project, I will be making a simple snake game which will consist of a window in which the game is played, a snake<br>consisting of square tiles, and a square tile that represents food. The game will be played with the arrow keys. This project<br>will consist of classes with methods that are able to check for collisions, check if the snake has eaten the food that has<br>spawned, spawn new food, and retrieve the location data of the snake as well as create the window in which the game is<br>played. The user will be able to use the arrow keys to control the snake in the direction of the food and the game will halt<br>if it detects a collision, or spawn more food if collision with food has been detected. 
+</pre>
 
 
 ## Features
