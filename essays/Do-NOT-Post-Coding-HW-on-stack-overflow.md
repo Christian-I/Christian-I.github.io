@@ -1,3 +1,14 @@
+---
+layout: essay
+type: essay
+title: "Do NOT Post Coding HW on Stack Overflow"
+# All dates must be YYYY-MM-DD format!
+date: 2024-09-11
+published: true
+labels:
+    -stack overflow
+---
+
 ## Introduction
 The roles of software engineers are not to just shut yourself to your desk all day and code… it might be in some cases.<img src ="../img/smart-questions/smartQuestions-image.jpg" img align ="right" img height="200px">
 <br> But, a key part of the work you will encounter is consulting with clients, coworkers, and possibly partner companies to ensure you are meeting all the design specifications of what you are building and all share the same view. Ensuring that so many different parties are on the same page requires communication skills, so a key skill we must develop as future software engineers is our ability to communicate clearly and effectively. On the internet, there are tons of forums and social media where people can post about their life and their own perspectives on specific topics. With forums in particular, and I have one in mind, to effectively facilitate discussions, the original prompts must follow certain guidelines. We will take a look at one of the biggest programming-related forums in the world, stack overflow.
