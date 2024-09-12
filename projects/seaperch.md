@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: "img/seaperch/Resized_20220604_193657(0).jpeg"
+image: "img/seaperch/seaperch_logo.jpg"
 title: "International SeaPerch Challenge"
 date: 2022
 published: true

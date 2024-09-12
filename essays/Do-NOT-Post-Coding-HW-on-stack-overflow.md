@@ -6,7 +6,7 @@ title: "Do NOT Post Coding HW on Stack Overflow"
 date: 2024-09-11
 published: true
 labels:
-    -stack overflow
+    - stack overflow
 ---
 
 ## Introduction
@@ -23,8 +23,8 @@ Expectedly, someone provided a walkthrough with explanations of two different ap
 ## Bad Questions
 Bad questions, intuitively, have the opposite qualities of a smart question. To list it out, the question provides little to no or too much background information about their problem, the question itself being broad and lacking specific details, or being demanding or aggressive. One example of a bad question can be found at this [link](https://stackoverflow.com/questions/78977067/can-anybody-solve-this-coding-questions).<br>
 This user was requesting help with a python coding question and unwisely posted the entire coding problem background and prompt, presumably copy pasted from some document, and the outline of code provided for the coding question with “Answer this question” under the code block, further giving the impression that this is from a coding class assignment. The coding problem itself looks to design a function that takes in a document and words list, and return true or false whether that document can be generated with  the supplied words list.<br>
+<img src ="../img/smart-questions/badQuestions-image.jpg" img align ="right" img height="250px">
 
 While they did do one thing right in formatting the code in a code block, they failed to provide concise details that would be easy for others to read and understand the problem in a short time. I wasn’t even able to keep my focus trying to read through the entire post. Also, the original poster appeared to not even try to attempt the problem themselves first, which if you did not bother to take the time to attempt the problem how do you know you are struggling with the problem? These forums are not chegg. Overall, the notion of asking the users of stack overflow to just “solve this coding question” is incredibly looked down upon as it does not foster discussion and learning about related technical elements. <br>
 Because of all the aforementioned, the question received negative votes and was closed by a moderator for being too broad. Posting a full coding problem broke some posting guidelines while he did provide ample information, expecting the community to solve your entire coding assignment is frowned upon.
 
-<img src ="../img/smart-questions/badQuestions-image.jpg" img align ="left" img height="250px">
