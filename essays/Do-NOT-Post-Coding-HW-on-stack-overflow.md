@@ -6,7 +6,7 @@ title: "Do NOT Post Coding HW on Stack Overflow"
 date: 2024-09-11
 published: true
 labels:
-    - stack overflow
+    - Stack Overflow
 ---
 
 ## Introduction
