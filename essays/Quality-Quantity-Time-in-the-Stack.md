@@ -35,7 +35,7 @@ Left to reconsider what it is we'd truly like to pursue as a career, it is truly
 </p>
 
 <p>
-I can say, from a beginner standpoint, bootstrap is amazing for quickly developing and learning how to develop websites. Much easier than using raw html and css simply because of all the pre-built components and systems that bootstrap adds on top of html for web design. For example, using bootstrap saves a lot of time with building a simple website such as one on the history of browsers or cloning a prototype of websites found online such as [Island Snow's](https://islandsnow.com/), my renditions shown on the images below. Also below is an example code snippet from the browser history web page I designed utilizing the bootstrap grid system to much easily format the website than the previous design which used only css styling.
+I can say, from a beginner standpoint, bootstrap is amazing for quickly developing and learning how to develop websites. Much easier than using raw html and css simply because of all the pre-built components and systems that bootstrap adds on top of html for web design. For example, using bootstrap saves a lot of time with building a simple website such as one on the history of browsers or cloning a prototype of websites found online such as [`Island Snow's`](https://islandsnow.com/), my renditions shown on the images below. Also below is an example code snippet from the browser history web page I designed utilizing the bootstrap grid system to much easily format the website than the previous design which used only css styling.
 <br>
 </p>
 <p align=center>
@@ -68,7 +68,7 @@ I can say, from a beginner standpoint, bootstrap is amazing for quickly developi
 ### <u>Complex Website Elements</u>
 <p>
 
-Though bootstrap does bring ease of use for those simpler website designs, when it came to recreating a website of <u>my choice</u>, without any help from the professor as with the two previously mentioned web designs, I found those same features of bootstrap to be limiting when it came to finer or higher-level details. A prime example of this is one of the dropdown menus of the navigation menu for [bitwarden](https://bitwarden.com/).
+Though bootstrap does bring ease of use for those simpler website designs, when it came to recreating a website of <u>my choice</u>, without any help from the professor as with the two previously mentioned web designs, I found those same features of bootstrap to be limiting when it came to finer or higher-level details. A prime example of this is one of the dropdown menus of the navigation menu for [`bitwarden`](https://bitwarden.com/).
 <br>
 
 The real website had a horizontal dropdown menu that overall just looked fancy and heavily customized, as shown on the first image below. I tried my best to abstract the menu so I could implement it using just bootstrap: the menu goes until the margins at the sides of the page, there are three columns each with a header, a paragraph, and containers which contain text and redirect the user on click, and underneath all that a footer with more links. This may have just been due to my lack of knowledge of bootstrap, but I was not able to find a way to widen the dropdown menu element of bootstrap to the specifications of the real site or even widen it much it all, making the columns I defined way to crammed with overlapping text, could not figure out how to add those containers with lighter backgrounds at the bottom of each column. My final website design is shown after the image of the original website.
