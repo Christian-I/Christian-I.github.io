@@ -26,7 +26,7 @@ Left to reconsider what it is we'd truly like to pursue as a career, it is truly
 
 ## My Experience
 
-### <u>Simple Web Designs</u>
+#### <u>Simple Web Designs</u>
 
 <p align="center">
 <img src="../img/QQTS/magic-mirror.png" height="200pxx">
@@ -66,7 +66,7 @@ I can say, from a beginner standpoint, bootstrap is amazing for quickly developi
 </section>
 ```
 
-### <u>Complex Website Elements</u>
+#### <u>Complex Website Elements</u>
 <p>
 
 Though bootstrap does bring ease of use for those simpler website designs, when it came to recreating a website of <u>my choice</u>, without any help from the professor as with the two previously mentioned web designs, I found those same features of bootstrap to be limiting when it came to finer or higher-level details. A prime example of this is one of the dropdown menus of the navigation menu for bitwarden (at https://bitwarden.com/).
