@@ -71,7 +71,7 @@ With context out of the way, I will now explain a couple of design patterns that
   <span class="k">return</span> <span class="p">(</span>
     <span class="o">&lt;</span><span class="nx">Container</span><span class="o">&gt;</span>
       <span class="p">{</span><span class="cm">/* Presentational components */</span><span class="p">}</span>
-    <span class="o">&lt;</span><span class="sr">/Container</span><span class="err">&gt;
+    <span class="o">&lt;</span><span class="nx">/Container</span><span class="o">&gt;
 </span>  <span class="p">);</span>
 <span class="p">};</span>
 </code></pre></div></div>
@@ -81,15 +81,15 @@ With context out of the way, I will now explain a couple of design patterns that
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Presentational Component */</span>
 <span class="kd">const</span> <span class="nx">GoalRow</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">goal</span><span class="p">,</span> <span class="nx">onSave</span><span class="p">,</span> <span class="nx">onEdit</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">(</span>
   <span class="o">&lt;</span><span class="nx">tr</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">goal</span><span class="p">.</span><span class="nx">isEditing</span> <span class="p">?</span> <span class="o">&lt;</span><span class="nx">FormControl</span> <span class="p">...</span> <span class="o">/&gt;</span> <span class="p">:</span> <span class="nx">goal</span><span class="p">.</span><span class="nx">goal</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/td</span><span class="err">&gt;
+    <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">goal</span><span class="p">.</span><span class="nx">isEditing</span> <span class="p">?</span> <span class="o">&lt;</span><span class="nx">FormControl</span> <span class="p">...</span> <span class="o">/&gt;</span> <span class="p">:</span> <span class="nx">goal</span><span class="p">.</span><span class="nx">goal</span><span class="p">}</span><span class="o">&lt;</span><span class="nx">/td</span><span class="o">&gt;
 </span>    <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;</span>
       <span class="p">{</span><span class="nx">goal</span><span class="p">.</span><span class="nx">isEditing</span> <span class="p">?</span> <span class="p">(</span>
-        <span class="o">&lt;</span><span class="nx">Button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="o">=&gt;</span> <span class="nx">onSave</span><span class="p">(</span><span class="nx">goal</span><span class="p">)}</span><span class="o">&gt;</span><span class="nx">Save</span><span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
+        <span class="o">&lt;</span><span class="nx">Button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="o">=&gt;</span> <span class="nx">onSave</span><span class="p">(</span><span class="nx">goal</span><span class="p">)}</span><span class="o">&gt;</span><span class="nx">Save</span><span class="o">&lt;</span><span class="nx">/Button</span><span class="o">&gt;
 </span>      <span class="p">)</span> <span class="p">:</span> <span class="p">(</span>
-        <span class="o">&lt;</span><span class="nx">Button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="o">=&gt;</span> <span class="nx">onEdit</span><span class="p">(</span><span class="nx">goal</span><span class="p">)}</span><span class="o">&gt;</span><span class="nx">Edit</span><span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
+        <span class="o">&lt;</span><span class="nx">Button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="o">=&gt;</span> <span class="nx">onEdit</span><span class="p">(</span><span class="nx">goal</span><span class="p">)}</span><span class="o">&gt;</span><span class="nx">Edit</span><span class="o">&lt;</span><span class="nx">/Button</span><span class="o">&gt;
 </span>      <span class="p">)}</span>
-    <span class="o">&lt;</span><span class="sr">/td</span><span class="err">&gt;
-</span>  <span class="o">&lt;</span><span class="sr">/tr</span><span class="err">&gt;
+    <span class="o">&lt;</span><span class="nx">/td</span><span class="o">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">/tr</span><span class="o">&gt;
 </span><span class="p">);</span>
 </code></pre></div></div>
 </div>
@@ -155,10 +155,10 @@ The code for this next component has a return statement in the <i>Container Comp
   <span class="p">.</span>
   <span class="o">&lt;</span><span class="nx">Button</span> <span class="nx">variant</span><span class="o">=</span><span class="dl">"</span><span class="s2">success</span><span class="dl">"</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">me-2</span><span class="dl">"</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="o">=&gt;</span> <span class="nx">saveGoal</span><span class="p">(</span><span class="nx">goal</span><span class="p">)}</span><span class="o">&gt;</span>
     <span class="nx">Save</span>
-  <span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
+  <span class="o">&lt;</span><span class="nx">/Button</span><span class="o">&gt;
 </span>  <span class="o">&lt;</span><span class="nx">Button</span> <span class="nx">variant</span><span class="o">=</span><span class="dl">"</span><span class="s2">primary</span><span class="dl">"</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">me-2</span><span class="dl">"</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="o">=&gt;</span> <span class="nx">enableEdit</span><span class="p">(</span><span class="nx">goal</span><span class="p">)}</span><span class="o">&gt;</span>
     <span class="nx">Edit</span>
-  <span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
+  <span class="o">&lt;</span><span class="nx">/Button</span><span class="o">&gt;
 </span></code></pre></div></div>
 
 </div>
