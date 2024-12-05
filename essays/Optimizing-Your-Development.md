@@ -65,37 +65,33 @@ With context out of the way, I will now explain a couple of design patterns that
 
 <div style="width: 48%; float: left;">
 
-```js
-/* Container Component */
-const EditGoalsForm = () => {
-  // State and logic here
-  return (
-    <Container>
-      {/* Presentational components */}
-    </Container>
-  );
-};
-```
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Container Component */</span>
+<span class="kd">const</span> <span class="nx">EditGoalsForm</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// State and logic here</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">Container</span><span class="o">&gt;</span>
+      <span class="p">{</span><span class="cm">/* Presentational components */</span><span class="p">}</span>
+    <span class="o">&lt;</span><span class="sr">/Container</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+<span class="p">};</span>
+</code></pre></div></div>
 
 </div>
 <div style="width: 48%; float: right;">
-
-```js
-/* Presentational Component */
-const GoalRow = ({ goal, onSave, onEdit }) => (
-  <tr>
-    <td>{goal.isEditing ? <FormControl ... /> : goal.goal}</td>
-    <td>
-      {goal.isEditing ? (
-        <Button onClick={() => onSave(goal)}>Save</Button>
-      ) : (
-        <Button onClick={() => onEdit(goal)}>Edit</Button>
-      )}
-    </td>
-  </tr>
-);
-```
-
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Presentational Component */</span>
+<span class="kd">const</span> <span class="nx">GoalRow</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">goal</span><span class="p">,</span> <span class="nx">onSave</span><span class="p">,</span> <span class="nx">onEdit</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">(</span>
+  <span class="o">&lt;</span><span class="nx">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">goal</span><span class="p">.</span><span class="nx">isEditing</span> <span class="p">?</span> <span class="o">&lt;</span><span class="nx">FormControl</span> <span class="p">...</span> <span class="o">/&gt;</span> <span class="p">:</span> <span class="nx">goal</span><span class="p">.</span><span class="nx">goal</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>    <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;</span>
+      <span class="p">{</span><span class="nx">goal</span><span class="p">.</span><span class="nx">isEditing</span> <span class="p">?</span> <span class="p">(</span>
+        <span class="o">&lt;</span><span class="nx">Button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="o">=&gt;</span> <span class="nx">onSave</span><span class="p">(</span><span class="nx">goal</span><span class="p">)}</span><span class="o">&gt;</span><span class="nx">Save</span><span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
+</span>      <span class="p">)</span> <span class="p">:</span> <span class="p">(</span>
+        <span class="o">&lt;</span><span class="nx">Button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="o">=&gt;</span> <span class="nx">onEdit</span><span class="p">(</span><span class="nx">goal</span><span class="p">)}</span><span class="o">&gt;</span><span class="nx">Edit</span><span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
+</span>      <span class="p">)}</span>
+    <span class="o">&lt;</span><span class="sr">/td</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="sr">/tr</span><span class="err">&gt;
+</span><span class="p">);</span>
+</code></pre></div></div>
 </div>
 <div style="clear: both;"></div>
 <br>
@@ -112,60 +108,58 @@ The code for this next component has a return statement in the <i>Container Comp
 <br>
 <div style="width: 48%; float: left;">
 
-```js
-/* 
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* 
  * HOC Component 
  * File Location: @/lib/dbActions.ts
- */
+ */</span>
 
-export async function editGoal(goal: {
-  id: number;
-  goal: string;
-  isEditing: number;
-}) {
-  // Update the database
-  await prisma.goals.update({
-    where: { id: goal.id },
-    data: {
-      goal: goal.goal,
-      isEditing: goal.isEditing,
-    },
-  });
-}
-```
+<span class="k">export</span> <span class="k">async</span> <span class="kd">function</span> <span class="nx">editGoal</span><span class="p">(</span><span class="nx">goal</span><span class="p">:</span> <span class="p">{</span>
+  <span class="nl">id</span><span class="p">:</span> <span class="nx">number</span><span class="p">;</span>
+  <span class="nl">goal</span><span class="p">:</span> <span class="nx">string</span><span class="p">;</span>
+  <span class="nl">isEditing</span><span class="p">:</span> <span class="nx">number</span><span class="p">;</span>
+<span class="p">})</span> <span class="p">{</span>
+  <span class="c1">// Update the database</span>
+  <span class="k">await</span> <span class="nx">prisma</span><span class="p">.</span><span class="nx">goals</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span>
+    <span class="na">where</span><span class="p">:</span> <span class="p">{</span> <span class="na">id</span><span class="p">:</span> <span class="nx">goal</span><span class="p">.</span><span class="nx">id</span> <span class="p">},</span>
+    <span class="na">data</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">goal</span><span class="p">:</span> <span class="nx">goal</span><span class="p">.</span><span class="nx">goal</span><span class="p">,</span>
+      <span class="na">isEditing</span><span class="p">:</span> <span class="nx">goal</span><span class="p">.</span><span class="nx">isEditing</span><span class="p">,</span>
+    <span class="p">},</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 </div>
 <div style="width: 48%; float: right;">
 
-```js
-/* Edit Goals Component */
-'use client';
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Edit Goals Component */</span>
+<span class="dl">'</span><span class="s1">use client</span><span class="dl">'</span><span class="p">;</span>
 
-import { editGoal } from '@/lib/dbActions';
-  .
-  .
-  .
-const enableEdit = async (goal: Goals) => {
-  const updatedGoal = { ...goal, isEditing: 1 };
-  await editGoal(updatedGoal); // Calls HOC
-  window.location.reload();
-};
+<span class="k">import</span> <span class="p">{</span> <span class="nx">editGoal</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@/lib/dbActions</span><span class="dl">'</span><span class="p">;</span>
+  <span class="p">.</span>
+  <span class="p">.</span>
+  <span class="p">.</span>
+<span class="kd">const</span> <span class="nx">enableEdit</span> <span class="o">=</span> <span class="k">async</span> <span class="p">(</span><span class="nx">goal</span><span class="p">:</span> <span class="nx">Goals</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">updatedGoal</span> <span class="o">=</span> <span class="p">{</span> <span class="p">...</span><span class="nx">goal</span><span class="p">,</span> <span class="na">isEditing</span><span class="p">:</span> <span class="mi">1</span> <span class="p">};</span>
+  <span class="k">await</span> <span class="nx">editGoal</span><span class="p">(</span><span class="nx">updatedGoal</span><span class="p">);</span> <span class="c1">// Calls HOC</span>
+  <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">reload</span><span class="p">();</span>
+<span class="p">};</span>
 
-const saveGoal = async (goal: Goals) => {
-  const updatedGoal = { ...goal, isEditing: 0 };
-  await editGoal(updatedGoal); // Calls HOC
-  window.location.reload();
-};
-  .
-  .
-  .
-  <Button variant="success" className="me-2" onClick={() => saveGoal(goal)}>
-    Save
-  </Button>
-  <Button variant="primary" className="me-2" onClick={() => enableEdit(goal)}>
-    Edit
-  </Button>
-```
+<span class="kd">const</span> <span class="nx">saveGoal</span> <span class="o">=</span> <span class="k">async</span> <span class="p">(</span><span class="nx">goal</span><span class="p">:</span> <span class="nx">Goals</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">updatedGoal</span> <span class="o">=</span> <span class="p">{</span> <span class="p">...</span><span class="nx">goal</span><span class="p">,</span> <span class="na">isEditing</span><span class="p">:</span> <span class="mi">0</span> <span class="p">};</span>
+  <span class="k">await</span> <span class="nx">editGoal</span><span class="p">(</span><span class="nx">updatedGoal</span><span class="p">);</span> <span class="c1">// Calls HOC</span>
+  <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">reload</span><span class="p">();</span>
+<span class="p">};</span>
+  <span class="p">.</span>
+  <span class="p">.</span>
+  <span class="p">.</span>
+  <span class="o">&lt;</span><span class="nx">Button</span> <span class="nx">variant</span><span class="o">=</span><span class="dl">"</span><span class="s2">success</span><span class="dl">"</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">me-2</span><span class="dl">"</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="o">=&gt;</span> <span class="nx">saveGoal</span><span class="p">(</span><span class="nx">goal</span><span class="p">)}</span><span class="o">&gt;</span>
+    <span class="nx">Save</span>
+  <span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">Button</span> <span class="nx">variant</span><span class="o">=</span><span class="dl">"</span><span class="s2">primary</span><span class="dl">"</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">me-2</span><span class="dl">"</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="o">=&gt;</span> <span class="nx">enableEdit</span><span class="p">(</span><span class="nx">goal</span><span class="p">)}</span><span class="o">&gt;</span>
+    <span class="nx">Edit</span>
+  <span class="o">&lt;</span><span class="sr">/Button</span><span class="err">&gt;
+</span></code></pre></div></div>
 
 </div>
 <div style="clear: both;"></div>
