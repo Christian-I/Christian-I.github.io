@@ -105,7 +105,7 @@ The code for this next component has a return statement in the <i>Container Comp
 <br>
 </p>
 <p><b>Higher-Order Component (HOC) Pattern</b></p>
-<br>
+
 <div style="width: 48%; float: left;">
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* 
