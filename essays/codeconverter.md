@@ -4,7 +4,7 @@ type: essay
 title: ""
 # All dates must be YYYY-MM-DD format!
 date: 2024-12-04
-published: false
+published: true
 labels:
   - React
   - TypeScript
