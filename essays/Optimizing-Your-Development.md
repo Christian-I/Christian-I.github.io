@@ -25,7 +25,6 @@ Even for myself, I had not recognized how many design patterns I had picked up d
 <br>
 
 ## Design Patterns
-<br>
 
 #### <u>Definition and Examples</u>
 
@@ -66,7 +65,7 @@ With context out of the way, I will now explain a couple of design patterns that
 <br>
 <div style="width: 48%; float: left;">
 
-```
+```css
 /* Container Component */
 const EditGoalsForm = () => {
   // State and logic here
@@ -80,7 +79,7 @@ const EditGoalsForm = () => {
 </div>
 <div style="width: 48%; float: right;">
 
-```
+```css
 /* Presentational Component */
 const GoalRow = ({ goal, onSave, onEdit }) => (
   <tr>
@@ -111,7 +110,7 @@ The code for this next component has a return statement in the <i>Container Comp
 <br>
 <div style="width: 48%; float: left;">
 
-```
+```css
 /* 
  * HOC Component 
  * File Location: @/lib/dbActions.ts
@@ -135,7 +134,7 @@ export async function editGoal(goal: {
 </div>
 <div style="width: 48%; float: right;">
 
-```
+```css
 /* Edit Goals Component */
 'use client';
 
@@ -178,7 +177,6 @@ The <i>HOC Component </i> is defined in a separate file, alongside other functio
 </p>
 
 ## Future Thoughts
-<br>
 <p>
 Though design patterns were not something I consciously implemented into my coding environment, both of the examples in my code being that case, I think they are extremely valuable to follow. From the novice level, which is where I believe I am in most cases, I think design patterns can guide you to optimizing your programming by teaching you the best practices from the start while explaining the reasoning in a beginner-friendly manner. And at any level, I believe following design pattern will lead to improved coding efficiency and readability, as the patterns are what they advertise: standardized reusable solutions.
 </p>
