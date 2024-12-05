@@ -11,7 +11,10 @@ labels:
   - Developer Tool Kit
 ---
 
-```js
+<div class="language-javascript highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight">
+    <code>
 /* Container Component */
 const EditGoalsForm = () => {
   // State and logic here
@@ -21,7 +24,10 @@ const EditGoalsForm = () => {
     </Container>
   );
 };
-```
+    </code>
+    </pre>
+  </div>
+</div>
 
 ```js
 /* Presentational Component */
