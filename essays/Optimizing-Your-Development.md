@@ -65,7 +65,7 @@ With context out of the way, I will now explain a couple of design patterns that
 
 <div style="width: 48%; float: left;">
 
-```css
+```js
 /* Container Component */
 const EditGoalsForm = () => {
   // State and logic here
@@ -80,7 +80,7 @@ const EditGoalsForm = () => {
 </div>
 <div style="width: 48%; float: right;">
 
-```css
+```js
 /* Presentational Component */
 const GoalRow = ({ goal, onSave, onEdit }) => (
   <tr>
@@ -112,7 +112,7 @@ The code for this next component has a return statement in the <i>Container Comp
 <br>
 <div style="width: 48%; float: left;">
 
-```javascript
+```js
 /* 
  * HOC Component 
  * File Location: @/lib/dbActions.ts
@@ -137,7 +137,7 @@ export async function editGoal(goal: {
 </div>
 <div style="width: 48%; float: right;">
 
-```javascript
+```js
 /* Edit Goals Component */
 'use client';
 
