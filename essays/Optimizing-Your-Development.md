@@ -174,7 +174,10 @@ The code snippets above depicts an example of a Higher-Order Component (HOC) des
 The <i>HOC Component </i> is defined in a separate file, alongside other functions that can edit database data, and is passed the goal object to be edited. In the next component code, the HOC is referenced and passed an updated goal parameter which contains the updated <i>isEditing</i> and <i>goal</i> values (the goal value being the text of the goal). In this implementation, all client sided changes are handled by the next component code and the database changes are handled by the HOC. This change was also necessary as prisma must run in an asynchronous environment, whereas the client-sided changes require a "use client" page, therefore that separation of functions was needed.
 <br>
 <br>
+</p>
 
 ## Future Thoughts
 <br>
+<p>
 Though design patterns were not something I consciously implemented into my coding environment, both of the examples in my code being that case, I think they are extremely valuable to follow. From the novice level, which is where I believe I am in most cases, I think design patterns can guide you to optimizing your programming by teaching you the best practices from the start while explaining the reasoning in a beginner-friendly manner. And at any level, I believe following design pattern will lead to improved coding efficiency and readability, as the patterns are what they advertise: standardized reusable solutions.
+</p>
