@@ -62,7 +62,7 @@ With context out of the way, I will now explain a couple of design patterns that
 </p>
 
 <p><b>Container/Presentational Pattern</b></p>
-<br>
+
 <div style="width: 48%; float: left;">
 
 ```css
@@ -76,6 +76,7 @@ const EditGoalsForm = () => {
   );
 };
 ```
+
 </div>
 <div style="width: 48%; float: right;">
 
@@ -94,6 +95,7 @@ const GoalRow = ({ goal, onSave, onEdit }) => (
   </tr>
 );
 ```
+
 </div>
 <div style="clear: both;"></div>
 <br>
@@ -110,7 +112,7 @@ The code for this next component has a return statement in the <i>Container Comp
 <br>
 <div style="width: 48%; float: left;">
 
-```css
+```javascript
 /* 
  * HOC Component 
  * File Location: @/lib/dbActions.ts
@@ -131,10 +133,11 @@ export async function editGoal(goal: {
   });
 }
 ```
+
 </div>
 <div style="width: 48%; float: right;">
 
-```css
+```javascript
 /* Edit Goals Component */
 'use client';
 
@@ -163,6 +166,7 @@ const saveGoal = async (goal: Goals) => {
     Edit
   </Button>
 ```
+
 </div>
 <div style="clear: both;"></div>
 <br>
