@@ -66,7 +66,7 @@ With context out of the way, I will now explain a couple of design patterns that
 <br>
 <div style="width: 48%; float: left;">
 
-```java
+```
 /* Container Component */
 const EditGoalsForm = () => {
   // State and logic here
@@ -80,7 +80,7 @@ const EditGoalsForm = () => {
 </div>
 <div style="width: 48%; float: right;">
 
-```java
+```
 /* Presentational Component */
 const GoalRow = ({ goal, onSave, onEdit }) => (
   <tr>
@@ -106,11 +106,12 @@ The code snippets above depicts an example of a Container/Presentational design 
 The code for this next component has a return statement in the <i>Container Component</i> of the design pattern which is used to display information on the actual "Edit Goals" page mentioned before, that information being the contents of the return statement. In the <i>Presentational Component</i>, a different button (that being the data), will show depending on whether the goal is being edited or not. 
 <br>
 <br>
+</p>
 <p><b>Higher-Order Component (HOC) Pattern</b></p>
 <br>
 <div style="width: 48%; float: left;">
 
-```java
+```
 /* 
  * HOC Component 
  * File Location: @/lib/dbActions.ts
@@ -134,7 +135,7 @@ export async function editGoal(goal: {
 </div>
 <div style="width: 48%; float: right;">
 
-```java
+```
 /* Edit Goals Component */
 'use client';
 
