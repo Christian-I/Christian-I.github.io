@@ -22,11 +22,11 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "C#", "Java", "Javascript", "Kotlin" ]
+      "keywords": [ "C", "C++", "C#", "Java", "Javascript", "Kotlin", "Next.js", "ReactJs" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "Windows", "Git/GitHub" ]
+      "keywords": [ "Windows", "Git/GitHub", "PostgreSQL", "pgAdmin" ]
     }
   ],
   "education": [
@@ -50,6 +50,18 @@
     }
   ],
   "work": [
+    {
+      "company": "University Health Partners",
+      "position": "Digital Health Data Engineer Intern",
+      "website": "https://uhphawaii.org/",
+      "startDate": "2024-09-03",
+      "endDate": "present",
+      "summary": "Assist the UHP IT department with providing services to the UH School of Nursing and clincs across the state",
+      "highlights": [
+        "Designed a python ETL script which proccesses helpdesk ticket information to organize help request information",
+        "Designed a web application which displays the status of client EPIC access requests to reduce mail traffic"
+      ]
+    },
     {
       "company": "University of Hawaii College of Engineering",
       "position": "EE Grader",
