@@ -6,6 +6,8 @@ title: "Making Effort Estimating Helpful"
 date: 2024-12-20
 published: true
 labels:
+  - Effort Estimation
+  - Project Management
 ---
 
 ## Introduction

@@ -6,6 +6,8 @@ title: "Rounding Out Experiences"
 date: 2024-12-18
 published: true
 labels:
+  - Project Managmenet
+  - Developer Tool Kit
 ---
 
 ## Introduction
