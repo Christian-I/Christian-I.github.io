@@ -37,7 +37,7 @@ For tracking the actual amount of effort I put into the project, I would first i
 
 ## Reflect
 <p>
-<img src ="../img/effort/meme.jpg" align ="left" width="250px">
+<img src ="../img/effort/meme.jpg" align ="left" width="200">
 I believe estimating and tracking the effort I put into a programming project can be extremely beneficial for myself, as it provides statistics related to my performance in coding with respect to where I believe my performance I would be at. Even if my estimations were inaccurate, knowing the specific issues where I over- or underestimated the difficulty of the task or the proficiency of my skills helps me to reflect on where I truly am at with software engineering. I believe having both estimations and tracking them are essential to make any benefit from them however. Estimates before attempting a programming problem will be based on your interpretation of the combination of the problem specifications and your skill level, which being able to accurately evaluate the difficulty of a task and being aware of one's skill level are both important to be able to perform.
 </p>
 <br clear="left">
